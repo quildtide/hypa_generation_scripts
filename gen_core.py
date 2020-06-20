@@ -1,6 +1,6 @@
 import json
 
-import pa_directory
+from pa_directory import base_directory
 
 with open('unit_list.json') as unit_list:
     units = json.load(unit_list)['units']
