@@ -19,7 +19,7 @@ for i in units:
                 unit["storage"]["metal"] = unit["storage"]["metal"] * 2
 
         if "factory_cooldown_time" in unit:
-            unit["factory_cooldown_time"] = unit["factory_cooldown_time"] // 2
+            unit["factory_cooldown_time"] = unit["factory_cooldown_time"] / 2
 
         if "navigation" in unit:
             if "move_speed" in unit["navigation"]:
