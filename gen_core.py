@@ -1,6 +1,6 @@
 import json
 
-base_directory = 'F:/SteamSSD/steamapps/common/Planetary Annihilation Titans/media'
+from pa_directory import base_directory
 
 with open('unit_list.json') as unit_list:
     units = json.load(unit_list)['units']
