@@ -1,12 +1,20 @@
 import gen_core
 import json
 import os
+import shutil
 
 units = gen_core.units
 
 tools = gen_core.tools
 
 base_directory = gen_core.base_directory
+
+gen = "hypa"
+
+if os.path.isdir(gen):
+    shutil.rmtree(gen)
+
+shutil.copytree("export", gen, dirs_exist_ok=True)
 
 for i in units:
     with open(base_directory + i) as k:
@@ -36,12 +44,12 @@ for i in units:
             i = '/pa' + i[7:] 
 
         try:
-            with open('hypa' + i, 'w+') as out:
+            with open(gen + i, 'w+') as out:
                 c = 0
         except:
-            os.makedirs("/".join(('hypa' + i).split("/")[:-1]))
+            os.makedirs("/".join((gen + i).split("/")[:-1]))
 
-        with open('hypa' + i, 'w+') as out:
+        with open(gen + i, 'w+') as out:
             json.dump(unit, out)
 
 for i in tools:
@@ -67,10 +75,11 @@ for i in tools:
             i = '/pa' + i[7:] 
 
         try:
-            with open('hypa' + i, 'w+') as out:
+            with open(gen + i, 'w+') as out:
                 c = 0
         except:
-            os.makedirs("/".join(('hypa' + i).split("/")[:-1]))
+            os.makedirs("/".join((gen + i).split("/")[:-1]))
 
-        with open('hypa' + i, 'w+') as out:
+        with open(gen + i, 'w+') as out:
             json.dump(tool, out)
+
