@@ -20,6 +20,8 @@ for i in units:
 
         if "factory_cooldown_time" in unit:
             unit["factory_cooldown_time"] = unit["factory_cooldown_time"] / 2
+        if "wait_to_rolloff_time" in unit:
+            unit["wait_to_rolloff_time"] = unit["wait_to_rolloff_time"] / 2
 
         if "navigation" in unit:
             if "move_speed" in unit["navigation"]:
