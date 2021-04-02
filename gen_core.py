@@ -1,8 +1,11 @@
 import json
+import os.path
 
 from pa_directory import base_directory
 
-with open('unit_list.json') as unit_list:
+unit_list_path = os.path.join(base_directory, "pa_ex1/units/unit_list.json")
+
+with open(unit_list_path) as unit_list:
     units = json.load(unit_list)['units']
 
 for i in range(len(units)):
