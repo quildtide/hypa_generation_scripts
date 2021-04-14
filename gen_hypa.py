@@ -66,10 +66,15 @@ for i in tools:
             tool["pitch_rate"] = tool["pitch_rate"] * 1.5
         if "yaw_rate" in tool:
             tool["yaw_rate"] = tool["yaw_rate"] * 1.5
-
-        if "ammo_demand" in tool:
-            tool["ammo_demand"] = tool["ammo_demand"] * 1.5     
-
+        
+        if "ammo_source" in tool:
+            if tool["ammo_source"] == "metal":
+                if "ammo_demand" in tool:
+                    tool["ammo_demand"] = tool["ammo_demand"] * 1.5
+            else:
+                if "ammo_per_shot" in tool and "ammo_capacity" in tool:
+                    tool["ammo_per_shot"] = tool["ammo_per_shot"] / 1.5
+                    tool["ammo_capacity"] = tool["ammo_capacity"] / 1.5
 
         if i[0:7] == '/pa_ex1':
             i = '/pa' + i[7:] 
