@@ -1,38 +1,146 @@
 import json
 import os.path
+import urllib.request as req
+import zipfile
+import tempfile
+import shutil
 
-from pa_directory import base_directory
+from pa_directory import pa_path
 
-unit_list_path = os.path.join(base_directory, "pa_ex1/units/unit_list.json")
+dl_path = "download"
+stage_path = "stage"
+
+mod_urls = {
+    "legion": "https://cdn.palobby.com/community-mods/downloads/com.pa.legion-expansion-server.zip",
+    "2w": "https://github.com/Anonemous2/pa.mla.unit.addon/archive/master.zip",
+    "s17": "https://github.com/DAEDALUS-Modding/Section-17/releases/latest/download/s17-server.zip",
+    "dozer": "https://github.com/DAEDALUS-Modding/Dozer/archive/release.zip"
+}
+
+for (mod, mod_url) in mod_urls.items():
+    # download and unzip mods
+    mod_folder = os.path.join(dl_path, mod)
+
+    if os.path.isdir(mod_folder):
+        # don't redownload if mod already downloaded
+        # clear downloads if need to update version
+        continue
+
+    with req.urlopen(mod_url) as resp:
+        with tempfile.TemporaryFile() as tmp_zip:
+            shutil.copyfileobj(resp, tmp_zip)
+
+            with zipfile.ZipFile(tmp_zip) as zf:
+                names = zf.namelist()
+                if "modinfo.json" in names:
+                    zf.extractall(mod_folder)
+                else: # modinfo not in top level
+                    firstpath = names[0].split("/")[0]
+                    zf.extractall(dl_path)
+                    os.rename(os.path.join(dl_path, firstpath), os.path.join(dl_path, mod))
+
+
+mod_priorities = {}
+mod_order = list()
+
+for mod in mod_urls.keys():
+    # high priority mounts first; low priority overrides later!
+    with open(os.path.join(mod_folder, "modinfo.json")) as infile:
+        priority = json.load(infile)["priority"]
+        mod_priorities[mod] = priority
+
+        for (i, m) in enumerate(mod_order):
+            if priority > mod_priorities[m]:
+                mod_order.insert(i, mod)
+                continue
+
+        mod_order.append(mod) # lowest priority so far
+    
+# create aggregate unit list
+unit_list_path = os.path.join(pa_path, "pa_ex1/units/unit_list.json")
 
 with open(unit_list_path) as unit_list:
-    units = json.load(unit_list)['units']
+    unit_set = set(json.load(unit_list)['units'])
 
-for i in range(len(units)):
-    try:
-        titans = '/pa_ex1' + units[i][3:]
-        with open(base_directory + titans) as t:
-            units[i] = titans
-    except:
-        c = 0
+for mod in mod_order:
+    unit_list_path = os.path.join(dl_path, mod, "pa/units/unit_list.json")
 
+    with open(unit_list_path) as unit_list:
+        mod_units = set(json.load(unit_list)['units'])
+        unit_set = unit_set.union(mod_units)
+
+units = [x[1:] for x in unit_set] # remove starting / from filepath
+
+# mount PA, Titans, and mod files in stage/
+if os.path.isdir(stage_path):
+    shutil.rmtree(stage_path)
+
+os.mkdir(stage_path)
 
 tools = []
 
-for i in units:
-    filename = base_directory + i
-    with open(filename) as unitfile:
+def update_tool_list(unit_path):
+    with open(unit_path) as unitfile:
         unit = json.load(unitfile)
-        try:
+        if "tools" in unit:
             for j in unit['tools']:
                 tools.append(j['spec_id'])
-        except:
-            c = 0
 
-for i in range(len(tools)):
-    try:
-        titans = '/pa_ex1' + tools[i][3:]
-        with open(base_directory + titans) as t:
-            tools[i] = titans
-    except:
-        c = 0
+def copyfile_w_dir(src, dst):
+    os.makedirs(os.path.dirname(dst), exist_ok = True)
+    shutil.copyfile(src, dst)
+
+# mount PA and Titans unit/tool .jsons
+
+for unit in units:
+    # There is a chance that a mod might bring in a unit defined in
+    # the base game but which is absent in the base unit_list.
+    # i.e. stinger or deepspace radar
+    # Not a problem unless the unit isn't redefined in the mod.
+    # However, this script protects against that just in case.
+    vanilla_path = os.path.join(pa_path, unit)
+    titans_path = os.path.join(pa_path, 'pa_ex1' + unit[2:])
+
+    out_path = os.path.join(stage_path, unit)
+
+    if os.path.isfile(titans_path):
+        update_tool_list(titans_path)
+        copyfile_w_dir(titans_path, out_path)
+    elif os.path.isfile(vanilla_path):
+        update_tool_list(vanilla_path)
+        copyfile_w_dir(vanilla_path, out_path)
+
+tools = [x[1:] for x in tools]
+
+for tool in tools:
+    # There is a chance that a mod might use a tool defined in
+    # the base game but which is not directly used by any unit
+    # we've moved to stage/.
+    # This is a problem but this script currently makes no attempt
+    # to address this potential issue.
+    vanilla_path = os.path.join(pa_path, tool)
+    titans_path = os.path.join(pa_path, "pa_ex1" + tool[2:])
+
+    out_path = os.path.join(stage_path, tool)
+
+    if os.path.isfile(titans_path):
+        copyfile_w_dir(titans_path, out_path)
+    elif os.path.isfile(vanilla_path):
+        copyfile_w_dir(vanilla_path, out_path)    
+
+# mount mod files in stage/
+
+for mod in mod_order:
+    # There is a chance that modded units may be in weird places.
+    # Mods are relatively small so we can mount them in their 
+    # #entirety just in case.
+    shutil.copytree(os.path.join(dl_path, mod), stage_path, dirs_exist_ok=True)
+
+# update tool list
+
+tools = []
+
+for unit in units:
+    update_tool_list(os.path.join(stage_path, unit))
+
+tools = [x[1:] for x in tools]

@@ -3,3 +3,5 @@ pa_directory.py
 hypa/*
 *.pyc
 pa_directory.py
+download/*
+stage/*

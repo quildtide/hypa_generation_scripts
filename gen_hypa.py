@@ -7,9 +7,9 @@ units = gen_core.units
 
 tools = gen_core.tools
 
-base_directory = gen_core.base_directory
+base_directory = gen_core.stage_path + "/"
 
-gen = "hypa"
+gen = "hypa/"
 
 if os.path.isdir(gen):
     shutil.rmtree(gen)
@@ -38,10 +38,6 @@ for i in units:
                 unit["navigation"]["acceleration"] = int(unit["navigation"]["acceleration"] * 1.5)
             if "turn_speed" in unit["navigation"]:
                 unit["navigation"]["turn_speed"] = int(unit["navigation"]["turn_speed"] * 1.5)
-
-
-        if i[0:7] == '/pa_ex1':
-            i = '/pa' + i[7:] 
 
         try:
             with open(gen + i, 'w+') as out:
@@ -75,9 +71,6 @@ for i in tools:
                 if "ammo_per_shot" in tool and "ammo_capacity" in tool:
                     tool["ammo_per_shot"] = tool["ammo_per_shot"] / 1.5
                     tool["ammo_capacity"] = tool["ammo_capacity"] / 1.5
-
-        if i[0:7] == '/pa_ex1':
-            i = '/pa' + i[7:] 
 
         try:
             with open(gen + i, 'w+') as out:

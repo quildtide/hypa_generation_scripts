@@ -2,17 +2,18 @@
     "author": "Team DAEDALUS, Quildtide",
     "build": "115546",
     "context": "server",
-    "date": "2021-04-01",
-    "description": "Makes game fast!!! 2.0X Build Speed/Eco!!! 1.5X Attack/Move Speed!!!",
+    "date": "2021-04-14",
+    "description": "Makes game fast!!! 2.0X Build Speed/Eco!!! 1.5X Attack/Move Speed!!! Full compatibility with Legion, Second Wave, Section 17, and Dozer mods.",
     "display_name": "HyPA",
     "forum": "https://forums.planetaryannihilation.com/threads/hypa.73426/",
     "identifier": "com.pa.daedalus.hypa",
     "signature": "not yet implemented",
-    "version": "0.9.5",
+    "version": "0.10.5",
     "icon": "https://i.imgur.com/iu6swso.png",
-    "priority": 115,
+    "priority": 60,
     "category": [
         "balance",
-        "titans"
+        "titans",
+        "legion"
       ]
 }
