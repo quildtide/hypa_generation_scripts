@@ -111,6 +111,7 @@ for unit in units:
         copyfile_w_dir(vanilla_path, out_path)
 
 tools = [x[1:] for x in tools]
+tools.append("pa/units/commanders/base_commander/base_commander_tool_weapon.json")
 
 for tool in tools:
     # There is a chance that a mod might use a tool defined in
