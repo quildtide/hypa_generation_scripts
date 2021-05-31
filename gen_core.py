@@ -145,3 +145,4 @@ for unit in units:
     update_tool_list(os.path.join(stage_path, unit))
 
 tools = [x[1:] for x in tools]
+tools.append("pa/units/commanders/base_commander/base_commander_tool_weapon.json")
