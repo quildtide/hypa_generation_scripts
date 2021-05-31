@@ -57,6 +57,8 @@ for i in tools:
 
         if "rate_of_fire" in tool:
             tool["rate_of_fire"] = tool["rate_of_fire"] * 1.5
+        else if i == "pa/units/commanders/base_commander/base_commander_tool_bullet_weapon.json":
+            tool["rate_of_fire"] = 3
         if "pitch_rate" in tool:
             tool["pitch_rate"] = tool["pitch_rate"] * 1.5
         if "yaw_rate" in tool:
