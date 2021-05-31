@@ -39,13 +39,12 @@ for i in units:
             if "turn_speed" in unit["navigation"]:
                 unit["navigation"]["turn_speed"] = int(unit["navigation"]["turn_speed"] * 1.5)
 
-        try:
-            with open(gen + i, 'w+') as out:
-                c = 0
-        except:
-            os.makedirs("/".join((gen + i).split("/")[:-1]))
+        new_filename = gen + i
+        new_dirname = os.path.dirname(new_filename)
+        if not os.path.isdir(new_dirname):
+            os.makedirs(new_dirname)
 
-        with open(gen + i, 'w+') as out:
+        with open(new_filename, 'w+') as out:
             json.dump(unit, out)
 
 for i in tools:
@@ -72,12 +71,11 @@ for i in tools:
                     tool["ammo_per_shot"] = tool["ammo_per_shot"] / 1.5
                     tool["ammo_capacity"] = tool["ammo_capacity"] / 1.5
 
-        try:
-            with open(gen + i, 'w+') as out:
-                c = 0
-        except:
-            os.makedirs("/".join((gen + i).split("/")[:-1]))
+        new_filename = gen + i
+        new_dirname = os.path.dirname(new_filename)
+        if not os.path.isdir(new_dirname):
+            os.makedirs(new_dirname)
 
-        with open(gen + i, 'w+') as out:
+        with open(new_filename, 'w+') as out:
             json.dump(tool, out)
 
