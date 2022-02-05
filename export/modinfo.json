@@ -1,14 +1,14 @@
 {
-    "author": "Team DAEDALUS, Quildtide",
+    "author": "Quildtide",
     "build": "115546",
     "context": "server",
-    "date": "2021-05-30",
+    "date": "2022-02-04",
     "description": "Popcorn goes pop",
     "display_name": "Redenbacher-EX",
     "forum": "",
     "identifier": "com.pa.daedalus.redenbacher-ex",
     "signature": "not yet implemented",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "https://i.imgur.com/oLMAcF9.png",
     "priority": 60,
     "category": [
