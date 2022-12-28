@@ -46,7 +46,13 @@ for i in units:
 
         with open(new_filename, 'w+') as out:
             json.dump(unit, out)
-
+            
+commander_weapons = [
+    "pa/units/commanders/base_commander/base_commander_tool_weapon.json",
+    "pa/units/commanders/base_commander/base_commander_tool_aa_weapon.json",
+    "pa/units/commanders/base_commander/base_commander_tool_torpedo_weapon.json"
+]
+tools = tools + commander_weapons
 for i in tools:
     with open(base_directory + i) as k:
         tool = json.load(k)
