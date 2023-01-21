@@ -14,7 +14,12 @@ mod_urls = {
     "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/main.zip",
     "2w": "https://github.com/Anonemous2/pa.mla.unit.addon/archive/master.zip",
     "s17": "https://github.com/DAEDALUS-Modding/Section-17/releases/latest/download/s17-server.zip",
-    "dozer": "https://github.com/DAEDALUS-Modding/Dozer/archive/release.zip"
+    "dozer": "https://github.com/DAEDALUS-Modding/Dozer/archive/release.zip",
+    "bugs": "https://github.com/Ferret-Master/Bug-Faction/archive/refs/heads/main.zip",
+    "scenario_units": "https://github.com/Ferret-Master/Scenario-Server/archive/refs/heads/release.zip",
+    "thorosmen": "https://github.com/ATLASLORD/Thorosmen/archive/refs/heads/main.zip",
+    "upgradable_turrets": "https://github.com/BotWhan/com.pa.upgradable-turrets/archive/main.zip",
+    "telemazer": "https://github.com/DAEDALUS-Modding/telemazer-go-brrr/releases/latest/download/telemazer-server.zip"
 }
 
 for (mod, mod_url) in mod_urls.items():
