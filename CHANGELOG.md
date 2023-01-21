@@ -7,7 +7,6 @@
   - Scenario Units (Bug mode, etc.)
   - Upgradable Turrets
   - Thorosmen
-  - Telezer go BRRR
 
 ## v1.0.1 (2022-12-27)
 
