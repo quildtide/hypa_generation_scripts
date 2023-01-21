@@ -16,7 +16,7 @@
   - Second Wave 0.12.0
   - Section 17 0.4.0
 
-## v1.0.0
+## v1.0.0 (2021-04-31)
 
 ### HyPA
 - Fix bug preventing commander from receiving faster attack speed
