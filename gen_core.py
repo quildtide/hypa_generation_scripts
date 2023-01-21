@@ -18,8 +18,7 @@ mod_urls = {
     "bugs": "https://github.com/Ferret-Master/Bug-Faction/archive/refs/heads/main.zip",
     "scenario_units": "https://github.com/Ferret-Master/Scenario-Server/archive/refs/heads/release.zip",
     "thorosmen": "https://github.com/ATLASLORD/Thorosmen/archive/refs/heads/main.zip",
-    "upgradable_turrets": "https://github.com/BotWhan/com.pa.upgradable-turrets/archive/main.zip",
-    "telemazer": "https://github.com/DAEDALUS-Modding/telemazer-go-brrr/releases/latest/download/telemazer-server.zip"
+    "upgradable_turrets": "https://github.com/BotWhan/com.pa.upgradable-turrets/archive/main.zip"
 }
 
 for (mod, mod_url) in mod_urls.items():
