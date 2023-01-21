@@ -3,10 +3,10 @@
 ## v1.1.0 (2023-01-20)
 
 - Support added for new mods:
-  - Bug faction
-  - Scenario Units (Bug mode, etc.)
-  - Upgradable Turrets
-  - Thorosmen
+  - Bug faction 1.11
+  - Scenario Units (Bug mode, etc.) 1.4
+  - Upgradable Turrets 1.11
+  - Thorosmen 1.8.5
 
 ## v1.0.1 (2022-12-27)
 

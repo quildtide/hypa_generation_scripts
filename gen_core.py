@@ -85,7 +85,11 @@ tools = []
 
 def update_tool_list(unit_path):
     with open(unit_path) as unitfile:
-        unit = json.load(unitfile)
+        try:
+            unit = json.load(unitfile)
+        except:
+            print(unitfile)
+
         if "tools" in unit:
             for j in unit['tools']:
                 tools.append(j['spec_id'])
