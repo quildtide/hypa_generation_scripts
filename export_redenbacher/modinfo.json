@@ -1,0 +1,19 @@
+{
+    "author": "Quildtide",
+    "build": "115546",
+    "context": "server",
+    "description": "Popcorn goes pop",
+    "display_name": "Redenbacher-EX",
+    "forum": "",
+    "identifier": "com.pa.daedalus.redenbacher-ex",
+    "signature": "not yet implemented",
+    "icon": "https://i.imgur.com/oLMAcF9.png",
+    "date": "2023-01-20",
+    "version": "1.1.0",
+    "priority": 60,
+    "category": [
+        "balance",
+        "titans",
+        "legion"
+      ]
+}
