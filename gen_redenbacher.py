@@ -86,12 +86,16 @@ def write_altered_file(json_data, file_path):
     with open(new_filename, 'w+') as out:
         json.dump(json_data, out)
 
-commander_path = "pa/units/commanders/base_commander/base_commander.json"
-with open(os.path.join(gen, commander_path)) as unit_file:
-    unit = json.load(unit_file)
-    unit["max_health"] = unit["max_health"] * 15
-    unit["build_metal_cost"] = unit["build_metal_cost"] * 15
-    write_altered_file(unit, commander_path)
+commander_paths = [
+    "pa/units/commanders/base_commander/base_commander.json",
+    "pa/units/commanders/base_bug_commander/base_commander.json"
+]
+for commander_path in commander_paths:
+    with open(os.path.join(gen, commander_path)) as unit_file:
+        unit = json.load(unit_file)
+        unit["max_health"] = unit["max_health"] * 15
+        unit["build_metal_cost"] = unit["build_metal_cost"] * 15
+        write_altered_file(unit, commander_path)
 
 commander_weapons = [
     "base_commander_tool_weapon.json",
