@@ -81,3 +81,19 @@ for i in tools:
         with open(new_filename, 'w+') as out:
             json.dump(tool, out)
 
+
+def write_altered_file(json_data, file_path):
+    new_filename = os.path.join(gen, file_path)
+    with open(new_filename, 'w+') as out:
+        json.dump(json_data, out)
+
+commander_paths = [
+    "pa/units/commanders/base_commander/base_commander.json",
+    "pa/units/commanders/base_bug_commander/base_commander.json"
+]
+for commander_path in commander_paths:
+    with open(os.path.join(gen, commander_path)) as unit_file:
+        unit = json.load(unit_file)
+        unit["max_health"] = unit["max_health"] * 3
+        unit["build_metal_cost"] = unit["build_metal_cost"] * 3
+        write_altered_file(unit, commander_path)
