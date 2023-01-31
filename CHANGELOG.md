@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v1.1.1 (2023-01-31)
+
+- Support maintained (no relevant changes) for mod:
+  - Thorosmen 1.8.6
+
+### HyPA
+- Commander health is now multiplied by 3
+- Lob now recharges and fires 2x faster instead of 1.5x
+  
+### Redenbacher-EX
+- Fixed Bug Commander not receiving Commander buffs
+
 ## v1.1.0 (2023-01-20)
 
 - Support added for new mods:
