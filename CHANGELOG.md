@@ -30,10 +30,23 @@
   - Second Wave 0.12.0
   - Section 17 0.4.0
 
-## v1.0.0 (2021-04-31)
+## v1.0.0 (2021-05-31)
 
 ### HyPA
 - Fix bug preventing commander from receiving faster attack speed
 
 ### Redenbacher-EX
 - Create new mode with further enhanced stats
+
+## v0.9.6 (2021-04-13)
+
+- Add support for mods:
+  - Legion
+  - Second Wave
+  - Section 17
+  - Dozer
+- Energy and time ammo weapons are handled differently from before
+  - Ammo per shot and ammo capacity are divided by 1.5
+  - Ammo demand is no longer multiplied by 1.5
+  - Metal ammo weapon behavior remains how it previously was (ammo demand x1.5)
+
