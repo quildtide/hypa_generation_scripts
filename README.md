@@ -28,6 +28,7 @@ Several unit-adding mods are explicitly supported by HyPA:
 - Thorosmen
 
 Unit-adding mods which are not supported by HyPA:
+- Scenario Server (bug mode!)
 - Aurora Artillery
 - Telemazer go BRRR
 - Anything not listed above
