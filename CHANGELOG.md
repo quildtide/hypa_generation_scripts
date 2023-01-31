@@ -4,7 +4,6 @@
 
 - Support added for new mods:
   - Bug faction 1.11
-  - Scenario Units (Bug mode, etc.) 1.4
   - Upgradable Turrets 1.11
   - Thorosmen 1.8.5
 
