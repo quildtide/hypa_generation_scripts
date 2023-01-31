@@ -1,6 +1,6 @@
 {
     "author": "Team DAEDALUS, Quildtide",
-    "build": "115546",
+    "build": "116400",
     "context": "server",
     "date": "2023-01-31",
     "description": "Makes game fast!!! 2.0X Build Speed/Eco!!! 1.5X Attack/Move Speed!!! Full compatibility with Legion, Second Wave, Section 17, and Dozer mods.",
@@ -8,7 +8,7 @@
     "forum": "https://forums.planetaryannihilation.com/threads/hypa.73426/",
     "identifier": "com.pa.daedalus.hypa",
     "signature": "not yet implemented",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "icon": "https://i.imgur.com/iu6swso.png",
     "priority": 60,
     "category": [

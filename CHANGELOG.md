@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.1.2 (2023-01-31)
+- Fix base game patch number mistake in Changelog and modinfo.json
+
 ## v1.1.1 (2023-01-31)
 
 - Support maintained (no relevant changes) for mod:
@@ -22,7 +25,7 @@
 ## v1.0.1 (2022-12-27)
 
 - Update unit info with:
-  - Base game balance 115546
+  - Base game balance 116400
   - Legion 1.26.0-116242
   - Second Wave 0.12.0
   - Section 17 0.4.0
