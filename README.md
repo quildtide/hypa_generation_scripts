@@ -19,13 +19,13 @@ Redenbacher-EX provides:
 ## Mod Support
 
 Several unit-adding mods are explicitly supported by HyPA:
-- Legion Faction
-- Bugs Faction
-- Second Wave
-- Section 17
-- Upgradeable Turrets
-- Dozer
-- Thorosmen
+- Legion Faction 1.26.0-116242
+- Bugs Faction 1.11
+- Second Wave 0.12.0
+- Section 17 0.4.0
+- Upgradeable Turrets 1.11
+- Dozer 1.0.1
+- Thorosmen 1.8.6
 
 Unit-adding mods which are not supported by HyPA:
 - Scenario Server (bug mode!)
