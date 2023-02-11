@@ -98,9 +98,25 @@ for commander_path in commander_paths:
         unit["build_metal_cost"] = unit["build_metal_cost"] * 2
         write_altered_file(unit, commander_path)
 
+
+# Lob
 lob_tool_path = "pa/units/land/artillery_unit_launcher/artillery_unit_launcher_tool_weapon.json"
 with open(os.path.join(gen, lob_tool_path)) as tool_file:
     tool = json.load(tool_file)
     tool["ammo_demand"] = tool["ammo_demand"] * 2
     tool["rate_of_fire"] = tool["rate_of_fire"] * 2
     write_altered_file(tool, lob_tool_path)
+
+# Legion Necromancer
+special_tool_path = "pa/units/land/l_necromancer/l_necromancer_tool_weapon.json"
+with open(os.path.join(gen, special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_demand"] = tool["ammo_demand"] * 2
+    write_altered_file(tool, special_tool_path)
+
+# Bug Matriarch
+special_tool_path = "pa/units/land/bug_matriarch/bug_matriarch_weapon.json"
+with open(os.path.join(gen, special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_demand"] = tool["ammo_demand"] * 2
+    write_altered_file(tool, special_tool_path)
