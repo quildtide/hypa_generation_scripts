@@ -120,3 +120,10 @@ with open(os.path.join(gen, special_tool_path)) as tool_file:
     tool = json.load(tool_file)
     tool["ammo_demand"] = tool["ammo_demand"] * 2
     write_altered_file(tool, special_tool_path)
+    
+# Temporary Bug Matriarch Death Spawner Fix
+special_tool_path = "pa/units/land/bug_matriarch/bug_matriarch_death_spawner.json"
+with open(os.path.join(gen, special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_id"][0]["id"] = "/pa/units/land/bug_matriarch/bug_matriarch_ammo.json"
+    write_altered_file(tool, special_tool_path)
