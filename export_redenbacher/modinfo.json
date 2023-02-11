@@ -8,8 +8,8 @@
     "identifier": "com.pa.daedalus.redenbacher-ex",
     "signature": "not yet implemented",
     "icon": "https://i.imgur.com/oLMAcF9.png",
-    "date": "2023-01-31",
-    "version": "1.1.2",
+    "date": "2023-02-10",
+    "version": "1.1.3",
     "priority": 60,
     "category": [
         "balance",
