@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v1.1.3 (2023-02-11)
+
+- Support updated for mod:
+  - Section 17 v0.5.0
+  - Dozer v1.0.2
+
+### HyPA
+- Lobby chat now contains a warning that HyPA is active + an explanation
+- A message is sent at the start of a match explaining that HyPA is active + an explanation
+- Commander health multiplier: 3 -> 2
+- Commander metal value multiplier: 3 -> 2
+- Pseudo-production weapon recharge rates: 1.5x -> 2.0x:
+  - Legion Necromancer
+  - Bug Matriarch
+  - Section 17 Sigma (Avengers and Slammers)
+  - Section 17 Dox Materializer
+- Bug Matriarch death spawns Bug Boomers instead of Legion Purgers (upstream mod still awaiting fix)
+
 ## v1.1.2 (2023-01-31)
 - Fix base game patch number mistake in Changelog and modinfo.json
 
@@ -10,6 +28,7 @@
 
 ### HyPA
 - Commander health is now multiplied by 3
+- Commander metal value is now multiplied by 3
 - Lob now recharges and fires 2x faster instead of 1.5x
   
 ### Redenbacher-EX
