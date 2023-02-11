@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.4 (2023-02-11)
+### HyPA
+- Fix missing lobby chat text
+
 ## v1.1.3 (2023-02-11)
 
 - Support updated for mod:
