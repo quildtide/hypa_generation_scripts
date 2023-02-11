@@ -94,8 +94,8 @@ commander_paths = [
 for commander_path in commander_paths:
     with open(os.path.join(gen, commander_path)) as unit_file:
         unit = json.load(unit_file)
-        unit["max_health"] = unit["max_health"] * 3
-        unit["build_metal_cost"] = unit["build_metal_cost"] * 3
+        unit["max_health"] = unit["max_health"] * 2
+        unit["build_metal_cost"] = unit["build_metal_cost"] * 2
         write_altered_file(unit, commander_path)
 
 lob_tool_path = "pa/units/land/artillery_unit_launcher/artillery_unit_launcher_tool_weapon.json"
