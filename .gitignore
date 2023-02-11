@@ -6,3 +6,4 @@ pa_directory.py
 download/*
 stage/*
 redenbacher-ex/*
+*.zip
