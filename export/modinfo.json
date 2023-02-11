@@ -15,5 +15,13 @@
         "balance",
         "titans",
         "legion"
-      ]
+    ],
+    "scenes": {
+        "new_game": [
+            "coui://ui/mods/com.pa.daedalus.hypa/new_game.js"
+        ],
+        "live_game_chat": [
+            "coui://ui/mods/com.pa.daedalus.hypa/live_game_chat.js"
+        ]
+    }
 }
