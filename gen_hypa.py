@@ -120,6 +120,30 @@ with open(os.path.join(gen, special_tool_path)) as tool_file:
     tool = json.load(tool_file)
     tool["ammo_demand"] = tool["ammo_demand"] * 2
     write_altered_file(tool, special_tool_path)
+
+# S17 Dox Materializer
+special_tool_path = "/pa/units/paeiou/dox_materializer/weapon.json"
+with open(os.path.join(gen, special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_per_shot"] = tool["ammo_per_shot"] / 2
+    tool["ammo_capacity"] = tool["ammo_capacity"] / 2
+    write_altered_file(tool, special_tool_path)
+
+# S17 Sigma, Slammer Dropper
+special_tool_path = "/pa/units/paeiou/sigma/dropper_weapon.json"
+with open(os.path.join(gen, special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_demand"] = tool["ammo_demand"] * 2
+    tool["rate_of_fire"] = tool["rate_of_fire"] * 2
+    write_altered_file(tool, special_tool_path)
+
+# S17 Sigma, Avenger Hangar
+special_tool_path = "/pa/units/paeiou/sigma/avenger_weapon.json"
+with open(os.path.join(gen, special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_demand"] = tool["ammo_demand"] * 2
+    tool["rate_of_fire"] = tool["rate_of_fire"] * 2
+    write_altered_file(tool, special_tool_path)
     
 # Temporary Bug Matriarch Death Spawner Fix
 special_tool_path = "pa/units/land/bug_matriarch/bug_matriarch_death_spawner.json"
