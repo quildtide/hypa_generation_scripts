@@ -122,7 +122,7 @@ with open(os.path.join(gen, special_tool_path)) as tool_file:
     write_altered_file(tool, special_tool_path)
 
 # S17 Dox Materializer
-special_tool_path = "/pa/units/paeiou/dox_materializer/weapon.json"
+special_tool_path = "pa/units/paeiou/dox_materializer/weapon.json"
 with open(os.path.join(gen, special_tool_path)) as tool_file:
     tool = json.load(tool_file)
     tool["ammo_per_shot"] = tool["ammo_per_shot"] / 2
@@ -130,7 +130,7 @@ with open(os.path.join(gen, special_tool_path)) as tool_file:
     write_altered_file(tool, special_tool_path)
 
 # S17 Sigma, Slammer Dropper
-special_tool_path = "/pa/units/paeiou/sigma/dropper_weapon.json"
+special_tool_path = "pa/units/paeiou/sigma/dropper_weapon.json"
 with open(os.path.join(gen, special_tool_path)) as tool_file:
     tool = json.load(tool_file)
     tool["ammo_demand"] = tool["ammo_demand"] * 2
@@ -138,7 +138,7 @@ with open(os.path.join(gen, special_tool_path)) as tool_file:
     write_altered_file(tool, special_tool_path)
 
 # S17 Sigma, Avenger Hangar
-special_tool_path = "/pa/units/paeiou/sigma/avenger_weapon.json"
+special_tool_path = "pa/units/paeiou/sigma/avenger_weapon.json"
 with open(os.path.join(gen, special_tool_path)) as tool_file:
     tool = json.load(tool_file)
     tool["ammo_demand"] = tool["ammo_demand"] * 2
