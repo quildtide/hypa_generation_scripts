@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.1.4a (2023-02-14)
+
+- Support maintained (no relevant changes) for mod:
+  - Thorosmen 1.8.8
+
 ## v1.1.4 (2023-02-11)
 ### HyPA
 - Fix missing lobby chat text
