@@ -22,10 +22,10 @@ Several unit-adding mods are explicitly supported by HyPA:
 - Legion Faction 1.26.0-116242
 - Bugs Faction 1.11
 - Second Wave 0.12.0
-- Section 17 0.4.0
+- Section 17 0.5.0
 - Upgradeable Turrets 1.11
-- Dozer 1.0.1
-- Thorosmen 1.8.6
+- Dozer 1.0.2
+- Thorosmen 1.8.8
 
 Unit-adding mods which are not supported by HyPA:
 - Scenario Server (bug mode!)
