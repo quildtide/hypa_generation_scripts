@@ -1,9 +1,30 @@
 # CHANGELOG
 
+## v1.2.0 (2023-02-20)
+
+- Fix mod order bug that primarily affects Section 17
+  - The Experimental Gantry will be buildable again
+  - Experimentals will not be buildable from T2 factories
+
+- Support updated for mods:
+  - Second Wave v0.12.3
+  - Thorosmen v1.9.0
+
+### Known Issues
+
+- Thorosmen has Class 2 Support due to partial conflicts with Section 17
+  - The following units are built from the Section 17 Experimental Gantry instead of their normal methods:
+    - Lawnmower
+    - Toblerone
+    - LZ 130 Hindenburg
+    - Thorondor
+  - These units cannot be built without Section 17 enabled
+
+
 ## v1.1.4a (2023-02-14)
 
 - Support maintained (no relevant changes) for mod:
-  - Thorosmen 1.8.8
+  - Thorosmen v1.8.8
 
 ## v1.1.4 (2023-02-11)
 ### HyPA
@@ -11,7 +32,7 @@
 
 ## v1.1.3 (2023-02-11)
 
-- Support updated for mod:
+- Support updated for mods:
   - Section 17 v0.5.0
   - Dozer v1.0.2
 
