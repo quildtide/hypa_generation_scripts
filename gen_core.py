@@ -48,17 +48,28 @@ mod_priorities = {}
 mod_order = list()
 
 for mod in mod_urls.keys():
+    mod_folder = os.path.join(dl_path, mod)
+    
     # high priority mounts first; low priority overrides later!
     with open(os.path.join(mod_folder, "modinfo.json")) as infile:
-        priority = json.load(infile)["priority"]
+        modinfo = json.load(infile)
+        if "priority" in modinfo:
+            priority = modinfo["priority"]
+        else:
+            priority = 100
+
         mod_priorities[mod] = priority
 
-        for (i, m) in enumerate(mod_order):
-            if priority > mod_priorities[m]:
-                mod_order.insert(i, mod)
-                continue
-
-        mod_order.append(mod) # lowest priority so far
+        if len(mod_order) == 0:
+            mod_order.append(mod)
+        elif priority < mod_priorities[mod_order[-1]]:
+            # lowest mod priority seen so far
+            mod_order.append(mod)
+        else:
+            for (i, m) in enumerate(mod_order):
+                if priority > mod_priorities[m]:
+                    mod_order.insert(i, mod)
+                    break
     
 # create aggregate unit list
 unit_list_path = os.path.join(pa_path, "pa_ex1/units/unit_list.json")
