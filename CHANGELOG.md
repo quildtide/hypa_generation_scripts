@@ -2,7 +2,7 @@
 
 ## v1.2.0 (2023-02-20)
 
-- Fix mod order bug that primarily affects Section 17
+- Fix a mod order bug that primarily affects Section 17
   - The Experimental Gantry will be buildable again
   - Experimentals will not be buildable from T2 factories
 
@@ -18,7 +18,7 @@
     - Toblerone
     - LZ 130 Hindenburg
     - Thorondor
-  - These units cannot be built without Section 17 enabled
+  - These units cannot be built without Section 17 enabled in addition to Thorosmen
 
 
 ## v1.1.4a (2023-02-14)
