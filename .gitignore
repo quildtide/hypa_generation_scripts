@@ -1,6 +1,8 @@
 __pycache__/*
 pa_directory.py
 hypa/*
+hypa_celestial_exp/*
+hypa_thorosmen/*
 *.pyc
 pa_directory.py
 download/*
