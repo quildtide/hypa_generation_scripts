@@ -100,4 +100,4 @@ with open(os.path.join(gen, special_tool_path)) as tool_file:
 
 
 # Write ZIP file
-shutil.make_archive("hypa.zip", "zip", gen)
+shutil.make_archive("hypa", "zip", gen)

@@ -35,5 +35,5 @@ generic_mod_actions(mod_urls, "export_celestial_exp", "hypa_celestial_exp/")
 
 
 # Write ZIP files
-shutil.make_archive("hypa_thorosmen.zip", "zip", "hypa_thorosmen")
-shutil.make_archive("hypa_celestial_exp.zip", "zip", "hypa_celestial_exp")
+shutil.make_archive("hypa_thorosmen", "zip", "hypa_thorosmen")
+shutil.make_archive("hypa_celestial_exp", "zip", "hypa_celestial_exp")
