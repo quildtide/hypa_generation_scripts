@@ -1,5 +1,34 @@
 # CHANGELOG
 
+## v1.3.1 (2023-04-16)
+- New mod compatibility patch system for handling second-class support
+- Thorosmen support from main HyPA mod to a compatibility patch
+  - Manhattans should behave normally again
+  - MLA Anti-nukes should work properly against Legion Nukes.
+- Second-class support (via compatibility patch) added for:
+  - Celestial Expansion v1.0.3-up1
+  - Celestial Expansion Additional v1.0.7-up0
+
+### Compatibility Patches
+
+#### Thorosmen v2.1.0.0
+- Supports Thorosmen v2.1.0
+
+#### Celestial Expansion v1.0.3.0
+- Supports Celestial Expansion v1.0.3-up1 and Celestial Expansion Additional v1.0.7-up0
+
+### Redenbacher-EX
+- Redenbacher-EX updates will be unbound from HyPA updates
+  - Future Redenbacher-EX updates may be created on an ad-hoc basis
+  - Future Redenbacher-EX updates will have their own changelog.
+  - Future Redenbacher-EX updates will have different versioning from HyPA.
+  - Redenbacher-EX is unlikely to have compatibility patch support for mods that require it.
+
+## v1.3.0 (2023-03-18)
+- Temporarily disable support for Thorosmen
+  - This will improve support for other supported mods, such as Legion
+  - Support for Thorosmen will be brought back in the near future
+
 ## v1.2.0 (2023-02-20)
 
 - Fix a mod order bug that primarily affects Section 17
