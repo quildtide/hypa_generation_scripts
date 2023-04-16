@@ -99,30 +99,30 @@ def mount_hypa_stage(mod_urls, keep_base=False):
         os.makedirs(os.path.dirname(dst), exist_ok = True)
         shutil.copyfile(src, dst)
 
+
+    for unit in units:
+        # There is a chance that a mod might bring in a unit defined in
+        # the base game but which is absent in the base unit_list.
+        # i.e. stinger or deepspace radar
+        # Not a problem unless the unit isn't redefined in the mod.
+        # However, this script protects against that just in case.
+        vanilla_path = os.path.join(pa_path, unit)
+        titans_path = os.path.join(pa_path, 'pa_ex1' + unit[2:])
+
+        out_path = os.path.join(stage_path, unit)
+
+        if os.path.isfile(titans_path):
+            update_tool_list(titans_path)
+            copyfile_w_dir(titans_path, out_path)
+        elif os.path.isfile(vanilla_path):
+            update_tool_list(vanilla_path)
+            copyfile_w_dir(vanilla_path, out_path)
+
+    tools = [x[1:] for x in tools]
+    tools.append("pa/units/commanders/base_commander/base_commander_tool_weapon.json")
+
     if keep_base:
-    # mount PA and Titans unit/tool .jsons if we want to include them
-
-        for unit in units:
-            # There is a chance that a mod might bring in a unit defined in
-            # the base game but which is absent in the base unit_list.
-            # i.e. stinger or deepspace radar
-            # Not a problem unless the unit isn't redefined in the mod.
-            # However, this script protects against that just in case.
-            vanilla_path = os.path.join(pa_path, unit)
-            titans_path = os.path.join(pa_path, 'pa_ex1' + unit[2:])
-
-            out_path = os.path.join(stage_path, unit)
-
-            if os.path.isfile(titans_path):
-                update_tool_list(titans_path)
-                copyfile_w_dir(titans_path, out_path)
-            elif os.path.isfile(vanilla_path):
-                update_tool_list(vanilla_path)
-                copyfile_w_dir(vanilla_path, out_path)
-
-        tools = [x[1:] for x in tools]
-        tools.append("pa/units/commanders/base_commander/base_commander_tool_weapon.json")
-
+    # mount PA and Titans tool .jsons if we want to include them
         for tool in tools:
             # There is a chance that a mod might use a tool defined in
             # the base game but which is not directly used by any unit
@@ -160,14 +160,18 @@ def mount_hypa_stage(mod_urls, keep_base=False):
         # adjust unit and tool lists
         new_units = []
         for unit in units:
-            if os.path.isfile(os.path.join(stage_path, unit)):
-                new_units.append(unit)
+            for mod in mod_order:
+                if os.path.isfile(os.path.join(dl_path, mod, unit)):
+                    new_units.append(unit)
+                    break
         units = new_units
         
         new_tools = []
         for tool in tools:
-            if os.path.isfile(os.path.join(stage_path, tool)):
-                new_tools.append(tool)
+            for mod in mod_order:
+                if os.path.isfile(os.path.join(dl_path, mod, tool)):
+                    new_tools.append(tool)
+                    break
         tools = new_tools
 
     return (units, tools)
