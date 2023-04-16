@@ -15,6 +15,9 @@ def install_mod(mod_path):
     with open(modinfo_path, 'r') as modinfo_file:
         info = json.load(modinfo_file)
         info["identifier"] = info["identifier"] + "-dev"
+        if "dependencies" in info:
+            info["dependencies"].remove("com.pa.daedalus.hypa")
+            info["dependencies"].append("com.pa.daedalus.hypa-dev")
     
     with open(modinfo_path, 'w') as modinfo_file:
         json.dump(info, modinfo_file)
