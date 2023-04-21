@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.4.1 (2023-04-21)
+- Mod description edited to include Legion license information.
+
 ## v1.4.0 (2023-04-21)
 - Update unit info with:
   - Base game balance 116931
