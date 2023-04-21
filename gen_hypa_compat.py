@@ -33,6 +33,12 @@ mod_urls = {
 }
 generic_mod_actions(mod_urls, "export_celestial_exp", "hypa_celestial_exp/")
 
+# Telemazer go BRRR
+mod_urls = {
+    "telemazer": "https://github.com/DAEDALUS-Modding/telemazer-go-brrr/releases/latest/download/telemazer-server.zip"
+}
+generic_mod_actions(mod_urls, "export_telemazer", "hypa_telemazer/")
+
 
 # Write ZIP files
 shutil.make_archive("hypa_thorosmen", "zip", "hypa_thorosmen")
