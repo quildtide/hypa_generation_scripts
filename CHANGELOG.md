@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## v1.4.0 (2023-04-21)
+- Update unit info with:
+  - Base game balance 116931
+
+- Second-class support (via compatibility patch) added for:
+  - Telemazer go BRRR v0.2.0
+
+### Compatibility Patches
+
+#### Celestial Expansion v2.0.0.0
+- Supports Celestial Expansion v2.0.0-up0 and Celestial Expansion Additional v2.0.0-up0
+
+#### Telemazer go BRRR v0.2.0.0
+- Supports Telemazer go BRRR v0.2.0
+
+#### Thorosmen v2.1.2.0
+- Supports Thorosmen v2.1.2
+
+
 ## v1.3.1 (2023-04-16)
 - New mod compatibility patch system for handling second-class support
 - Thorosmen support from main HyPA mod to a compatibility patch
