@@ -27,12 +27,12 @@ HyPA supports the following unit-adding mods without needing a compatibility pat
 - Dozer 1.0.2
 
 HyPA supports the following mods via additional compatibility patches (Class 2 Support):
-- Thorosmen 2.1.0
-- Celestial Expansion v1.0.3-up1
-- Celestial Expansion Additional v1.0.7-up0
+- Thorosmen 2.1.2
+- Celestial Expansion 2.0.0-up0
+- Celestial Expansion Additional 2.0.0-up0
+- Telemazer go BRRR 0.2.0
 
 Unit-adding mods which are not supported by HyPA:
 - Scenario Server (bug mode!)
 - Aurora Artillery
-- Telemazer go BRRR
 - Anything not listed above
