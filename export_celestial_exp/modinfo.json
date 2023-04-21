@@ -1,14 +1,14 @@
 {
     "author": "Team DAEDALUS, Quildtide",
-    "build": "116400",
+    "build": "116931",
     "context": "server",
-    "date": "2023-04-16",
-    "description": "HyPA Compatibility for the Celestial Expansion and Celestial Expansion Additional mods. Currently supports CE v1.0.3-up1, CEA v1.0.7-up0, and HyPA v1.3.x",
+    "date": "2023-04-21",
+    "description": "HyPA Compatibility for the Celestial Expansion and Celestial Expansion Additional mods. Currently supports CE v2.0.0-up0, CEA v2.0.0-up0, and HyPA v1.4.x",
     "display_name": "HyPA Compatibility - Celestial Expansion",
     "forum": "https://forums.planetaryannihilation.com/threads/hypa.73426/",
     "identifier": "com.pa.daedalus.hypa_ce_compat",
     "signature": "not yet implemented",
-    "version": "1.0.3.0",
+    "version": "2.0.0.0",
     "icon": "https://i.imgur.com/iu6swso.png",
     "priority": 58,
     "category": [
