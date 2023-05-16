@@ -3,6 +3,7 @@ pa_directory.py
 hypa/*
 hypa_celestial_exp/*
 hypa_thorosmen/*
+hypa_legion/*
 *.pyc
 pa_directory.py
 download/*

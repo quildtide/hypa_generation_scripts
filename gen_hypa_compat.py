@@ -39,8 +39,15 @@ mod_urls = {
 }
 generic_mod_actions(mod_urls, "export_telemazer", "hypa_telemazer/")
 
+# Legion
+mod_urls = {
+    "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/main.zip"
+}
+generic_mod_actions(mod_urls, "export_legion", "hypa_legion/")
+
 
 # Write ZIP files
 shutil.make_archive("hypa_thorosmen", "zip", "hypa_thorosmen")
 shutil.make_archive("hypa_celestial_exp", "zip", "hypa_celestial_exp")
 shutil.make_archive("hypa_telemazer", "zip", "hypa_telemazer")
+shutil.make_archive("hypa_legion", "zip", "hypa_legion")
