@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v1.4.2 (2023-05-14)
+- Support updated for mods:
+  - Legion 1.27.0-116931
+  - Bug Faction 1.16
+
+### Compatibility Patches
+
+#### Celestial Expansion 2.5.0.0
+- Supports Celestial Expansion 2.5.0-up0 and Celestial Expansion Additional 2.5.0-up0
+
+#### Thorosmen 2.1.4.0
+- Supports Thorosmen 2.1.4
+
 ## v1.4.1 (2023-04-21)
 - Mod description edited to include Legion license information.
 
