@@ -2,15 +2,15 @@
     "author": "Team DAEDALUS, Quildtide",
     "build": "116931",
     "context": "server",
-    "date": "2023-04-21",
+    "date": "2023-05-16",
     "description": "HyPA Compatibility for the Thorosmen unit mod. Currently supports Thorosmen v2.1.2 and HyPA v1.4.x",
     "display_name": "HyPA Compatibility - Thorosmen",
     "forum": "https://forums.planetaryannihilation.com/threads/hypa.73426/",
     "identifier": "com.pa.daedalus.hypa_thorosmen_compat",
     "signature": "not yet implemented",
-    "version": "2.1.2.0",
+    "version": "2.1.4.0",
     "icon": "https://i.imgur.com/iu6swso.png",
-    "priority": 59,
+    "priority": 58,
     "category": [
         "balance",
         "titans"
