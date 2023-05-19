@@ -19,17 +19,17 @@ Redenbacher-EX provides:
 ## Mod Support
 
 HyPA supports the following unit-adding mods without needing a compatibility patch (Class 1 Support):
-- Legion Faction 1.26.0-116242
-- Bugs Faction 1.11
+- Legion Faction 1.27.0-116931
+- Bugs Faction 1.16
 - Second Wave 0.12.3
 - Section 17 0.5.0
 - Upgradeable Turrets 1.11
 - Dozer 1.0.2
 
 HyPA supports the following mods via additional compatibility patches (Class 2 Support):
-- Thorosmen 2.1.2
-- Celestial Expansion 2.0.0-up0
-- Celestial Expansion Additional 2.0.0-up0
+- Thorosmen 2.1.4
+- Celestial Expansion 2.5.0-up0
+- Celestial Expansion Additional 2.5.0-up0
 - Telemazer go BRRR 0.2.0
 
 Unit-adding mods which are not supported by HyPA:
