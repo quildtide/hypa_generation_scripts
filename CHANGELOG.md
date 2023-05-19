@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v1.4.2 (2023-05-14)
+## v1.4.2 (2023-05-19)
 - Support updated for mods:
   - Legion 1.27.0-116931
   - Bug Faction 1.16
@@ -12,6 +12,9 @@
 
 #### Thorosmen 2.1.4.0
 - Supports Thorosmen 2.1.4
+
+#### Telemazer go BRRR 0.2.0.1
+- Fix dependency issues
 
 ## v1.4.1 (2023-04-21)
 - Mod description edited to include Legion license information.
