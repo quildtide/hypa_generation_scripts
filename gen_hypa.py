@@ -16,7 +16,7 @@ shutil.copytree("export", gen, dirs_exist_ok=True)
 
 # mount stage and get unit and tool lists
 mod_urls = {
-    "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/main.zip",
+    # "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/main.zip",
     "2w": "https://github.com/Anonemous2/pa.mla.unit.addon/archive/master.zip",
     "s17": "https://github.com/DAEDALUS-Modding/Section-17/releases/latest/download/s17-server.zip",
     "dozer": "https://github.com/DAEDALUS-Modding/Dozer/archive/release.zip",
