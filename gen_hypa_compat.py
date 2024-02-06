@@ -1,4 +1,5 @@
 import gen_core
+import json
 import os
 import shutil
 
@@ -44,6 +45,13 @@ mod_urls = {
     "legion": "https://github.com/Legion-Expansion/com.pa.legion-expansion-server/archive/main.zip"
 }
 generic_mod_actions(mod_urls, "export_legion", "hypa_legion/")
+
+# Legion Necromancer
+special_tool_path = "pa/units/land/l_necromancer/l_necromancer_tool_weapon.json"
+with open(os.path.join("hypa_legion/", special_tool_path)) as tool_file:
+    tool = json.load(tool_file)
+    tool["ammo_demand"] = tool["ammo_demand"] * 2
+    gen_core.write_altered_file(tool, special_tool_path, "hypa_legion/")
 
 
 # Write ZIP files
