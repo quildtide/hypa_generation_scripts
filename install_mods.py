@@ -16,8 +16,12 @@ def install_mod(mod_path):
         info = json.load(modinfo_file)
         info["identifier"] = info["identifier"] + "-dev"
         if "dependencies" in info:
-            info["dependencies"].remove("com.pa.daedalus.hypa")
-            info["dependencies"].append("com.pa.daedalus.hypa-dev")
+            if "com.pa.daedalus.hypa" in info["dependencies"]:
+                info["dependencies"].remove("com.pa.daedalus.hypa")
+                info["dependencies"].append("com.pa.daedalus.hypa-dev")
+            elif "com.pa.daedalus.hypa_submod_legion" in info["dependencies"]:
+                info["dependencies"].remove("com.pa.daedalus.hypa_submod_legion")
+                info["dependencies"].append("com.pa.daedalus.hypa_submod_legion-dev")
     
     with open(modinfo_path, 'w') as modinfo_file:
         json.dump(info, modinfo_file)
