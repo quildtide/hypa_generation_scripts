@@ -24,5 +24,5 @@ def install_mod(mod_path):
 
 install_mod("hypa")
 install_mod("hypa_thorosmen")
-install_mod("hypa_celestial_exp")
+# install_mod("hypa_celestial_exp")
 install_mod("hypa_telemazer")
