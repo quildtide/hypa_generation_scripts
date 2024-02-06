@@ -1,5 +1,39 @@
 # CHANGELOG
 
+## v2.0.0 (2023-02-06)
+This HyPA update has a high chance of breaking things. Initial testing has shown that things are working fine. There is a decent likelihood that issues will have to be addressed as they appear in the near future.
+
+- Update unit info with:
+  - Base game balance 116982
+    - Support for `Custom_58`
+      - This will fix compatibility with AIs and effect mods
+
+- Support removed from deprecated mods:
+  - Celestial Expansion and Celestial Expansion Addon
+
+- Support updated for mods:
+  - Legion 1.29.0-116982
+  - Bug Faction 1.30
+  - Second Wave 0.14.1
+  - Section 17 0.7.0
+  - Upgradable Turrets 1.13
+  - Dozer 1.1.1
+
+### Submods
+Legion support was moved from the main HyPA mod to a dependency submod for improved license compliance capabilities. Players should not notice any differences in behavior.
+
+#### Legion 1.29.0.0
+- Supports Legion 1.29.0-116982
+
+### Compatibility Patches
+
+#### Thorosmen 2.3.9.0
+- Supports Thorosmen 2.3.9
+
+#### Telemazer go BRRR 0.3.0.0
+- Supports Telemazer go BRRR 0.3.0
+
+
 ## v1.4.2 (2023-05-19)
 - Support updated for mods:
   - Legion 1.27.0-116931
