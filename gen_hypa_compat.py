@@ -27,11 +27,11 @@ generic_mod_actions(mod_urls, "export_thorosmen", "hypa_thorosmen/")
 
 
 # Celestial Expansion
-mod_urls = {
-    "celestial_exp": "https://github.com/Planetary-Annihilation-Fandom/com.pa.expansion.celestial/archive/refs/heads/main.zip",
-    "celestial_exp_addon": "https://github.com/Planetary-Annihilation-Fandom/com.pa.expansion.celestial.additional/archive/refs/heads/main.zip"
-}
-generic_mod_actions(mod_urls, "export_celestial_exp", "hypa_celestial_exp/")
+# mod_urls = {
+#     "celestial_exp": "https://github.com/Planetary-Annihilation-Fandom/com.pa.expansion.celestial/archive/refs/heads/main.zip",
+#     "celestial_exp_addon": "https://github.com/Planetary-Annihilation-Fandom/com.pa.expansion.celestial.additional/archive/refs/heads/main.zip"
+# }
+# generic_mod_actions(mod_urls, "export_celestial_exp", "hypa_celestial_exp/")
 
 # Telemazer go BRRR
 mod_urls = {
