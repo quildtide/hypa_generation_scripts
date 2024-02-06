@@ -3,7 +3,7 @@
     "build": "116931",
     "context": "server",
     "date": "2024-02-06",
-    "description": "Makes game fast!!! 2.0X Build Speed/Eco!!! 1.5X Attack/Move Speed!!! Full compatibility with Legion, Bug Faction, Second Wave, Section 17, and Dozer mods.---------------------------Some JSON files included in this work for the purpose of enabling compatibility with Legion are derivative of Legion Expansion by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Those JSON files are licenced under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (https://creativecommons.org/licenses/by-nc-sa/4.0/) by quildtide.",
+    "description": "Makes game fast!!! 2.0X Build Speed/Eco!!! 1.5X Attack/Move Speed!!! Full compatibility with Legion, Bug Faction, Second Wave, Section 17, and Dozer mods.",
     "display_name": "HyPA",
     "forum": "https://forums.planetaryannihilation.com/threads/hypa.73426/",
     "identifier": "com.pa.daedalus.hypa",
