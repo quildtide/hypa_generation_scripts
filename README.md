@@ -19,20 +19,32 @@ Redenbacher-EX provides:
 ## Mod Support
 
 HyPA supports the following unit-adding mods without needing a compatibility patch (Class 1 Support):
-- Legion Faction 1.27.0-116931
-- Bugs Faction 1.16
-- Second Wave 0.12.3
-- Section 17 0.5.0
-- Upgradeable Turrets 1.11
-- Dozer 1.0.2
+- Legion 1.29.0-116982
+- Bug Faction 1.30
+- Second Wave 0.14.1
+- Section 17 0.7.0
+- Upgradable Turrets 1.13
+- Dozer 1.1.1
 
 HyPA supports the following mods via additional compatibility patches (Class 2 Support):
-- Thorosmen 2.1.4
-- Celestial Expansion 2.5.0-up0
-- Celestial Expansion Additional 2.5.0-up0
-- Telemazer go BRRR 0.2.0
+- Thorosmen 2.3.9
+- Telemazer go BRRR 0.3.0
 
-Unit-adding mods which are not supported by HyPA:
+HyPA does not currently support the following unit-adding mods:
 - Scenario Server (bug mode!)
 - Aurora Artillery
+- Not Enough Energy
+- Baboom
+- Titan Gantry
+- Units as Commanders
+- Return of the Radar
 - Anything not listed above
+
+HyPA usually does not support balance alteration mods, including:
+- Commander Reclaim
+- Hover'n'Naval
+- Multi-Unit Transports
+- KAMIKAZE
+- Replication
+- Kuiju can use teleporters
+- Various other mods
