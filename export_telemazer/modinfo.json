@@ -1,6 +1,6 @@
 {
     "author": "Team DAEDALUS, Quildtide",
-    "build": "116931",
+    "build": "116982",
     "context": "server",
     "date": "2024-02-06",
     "description": "HyPA Compatibility for the Telemazer go BRRR unit mod. Currently supports Telemazer go BRRR v0.2.0 and HyPA v1.4.x",
