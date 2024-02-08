@@ -2,18 +2,21 @@
     "author": "Team DAEDALUS, Quildtide",
     "build": "116982",
     "context": "server",
-    "date": "2024-02-06",
+    "date": "2024-02-07",
     "description": "This mod is a derivative of Legion Expansion by nicb1, Crembels, KillerKiwiJuice, mgmetal13, zx0, Luther, Alpha2546, PRoeleert, wondible, mikeyh, Quitch, Stuart98, dom314, CptConundrum, Elodea, AndreasG, Clopse, Graushwein, N30N, Qzipco, WPMarshall, xankar used under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. This mod is licenced under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License by quildtide.",
     "display_name": "HyPA Submod - Legion",
     "forum": "https://forums.planetaryannihilation.com/threads/hypa.73426/",
     "identifier": "com.pa.daedalus.hypa_submod_legion",
     "signature": "not yet implemented",
-    "version": "1.29.0.0",
+    "version": "1.29.0.1",
     "icon": "https://i.imgur.com/iu6swso.png",
     "priority": 59,
     "category": [
         "balance",
         "titans"
     ],
-    "hidden": true
+    "hidden": true,
+    "dependencies": [
+        "com.pa.daedalus.hypa"
+    ]
 }
