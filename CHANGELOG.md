@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## v2.1.0 (2024-06-06)
+- Update unit info with:
+  - Base game balance 120799
+
+- Support updated for mods:
+  - Legion 1.30.1-120799
+  - Second Wave 0.14.2
+  - Section 17 0.8.2
+  - Thorosmen 2.4.2
+
+### Submods
+Legion support was moved from the main HyPA mod to a dependency submod for improved license compliance capabilities. Players should not notice any differences in behavior.
+
+#### Legion 1.30.1.0
+- Supports Legion 1.30.1-120799
+
+### Compatibility Patches
+
+#### Thorosmen 2.4.2.0
+- Supports Thorosmen 2.4.2
+
 ## v2.0.0a (2023-02-07)
 Base mod has no changes
 
