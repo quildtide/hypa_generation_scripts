@@ -1,20 +1,12 @@
-# HyPA (and Redenbacher-EX)
+# HyPA
 
-HyPA and Redenbacher-EX are two mods for Planetary Annihilation which create a "faster" experience.
+HyPA is a mod for Planetary Annihilation which creates a "faster" experience.
 
 HyPA provides:
 - 2x build rate
 - 2x econ rate
 - 1.5x movement speed
 - 1.5x attack speed
-  
-Redenbacher-EX provides:
-- 10x build rate
-- 10x econ rate
-- 1.5x movement speed
-- 1.5x attack speed
-- significantly buffed commander
-- increased capacity in unit cannon and starcannon
 
 ## Mod Support
 
