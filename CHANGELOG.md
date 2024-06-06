@@ -21,14 +21,14 @@ Legion support was moved from the main HyPA mod to a dependency submod for impro
 #### Thorosmen 2.4.2.0
 - Supports Thorosmen 2.4.2
 
-## v2.0.0a (2023-02-07)
+## v2.0.0a (2024-02-07)
 Base mod has no changes
 
 ### Submods
 #### Legion 1.29.0.1
 - Is now correctly disabled when you disable HyPA.
 
-## v2.0.0 (2023-02-06)
+## v2.0.0 (2024-02-06)
 This HyPA update has a high chance of breaking things. Initial testing has shown that things are working fine. There is a decent likelihood that issues will have to be addressed as they appear in the near future.
 
 - Update unit info with:
